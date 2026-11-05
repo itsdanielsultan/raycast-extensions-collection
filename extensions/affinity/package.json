@@ -1,0 +1,45 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "icon": "icon.png",
+  "author": "itsdanielsultan",
+  "license": "MIT",
+  "platforms": [
+    "macOS"
+  ],
+  "categories": [
+    "Design Tools"
+  ],
+  "dependencies": {
+    "@raycast/api": "^2.7.3",
+    "@modelcontextprotocol/sdk": "^1.32.1"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.1.1",
+    "@types/node": "22.13.10",
+    "@types/react": "19.0.10",
+    "eslint": "^9.39.4",
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3",
+    "tsx": "^4.20.6"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "lint": "ray lint",
+    "fix-lint": "ray lint --fix",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts"
+  },
+  "name": "affinity",
+  "title": "Affinity Document Inspector",
+  "description": "Inspect open Affinity documents and layers through Affinity\u2019s local MCP server.",
+  "commands": [
+    {
+      "name": "inspect-documents",
+      "title": "Inspect Documents",
+      "subtitle": "Affinity",
+      "description": "Search open documents and inspect size, DPI, page count, selection, and layer names without changing them.",
+      "mode": "view"
+    }
+  ]
+}
