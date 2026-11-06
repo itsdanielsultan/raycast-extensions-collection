@@ -3,7 +3,7 @@
   "name": "cluely",
   "title": "Cluely",
   "description": "Browse Cluely meetings, filter recent sessions, and copy summaries and transcripts through the official CLI",
-  "icon": "command-icon.png",
+  "icon": "icon.png",
   "author": "itsdanielsultan",
   "license": "MIT",
   "platforms": [

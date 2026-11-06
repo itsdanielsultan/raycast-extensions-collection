@@ -1,10 +1,8 @@
-# Changelog
+# Microsoft Word Changelog
 
-## [Feature Update] - {PR_MERGE_DATE}
+## [Initial Version] - {PR_MERGE_DATE}
 
-- New Recent Word Documents command (Spotlight-powered) with Quick Look, open in Word and reveal in Finder.
-- Active Document now shows word, character and paragraph counts, reading time and a text preview.
-
-## Initial Version - {PR_MERGE_DATE}
-
-- Add supported local app workflows for macOS.
+- **Recent Word Documents**: Search Word documents you've used in the last 90 days and open, preview or reveal them.
+- **Active Document**: Inspect Word document status, copy text, and control Track Changes.
+- **New Document from Text**: Create an unsaved Word document from clipboard text or typed content.
+- **Toggle Track Changes**: Toggle Track Changes on the active Word document and read back its state.

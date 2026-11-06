@@ -62,7 +62,7 @@
       "type": "directory",
       "required": false,
       "title": "Local Sync Folder",
-      "description": "Choose the exact folder shown in Cleft Settings \u2192 Local Sync \u2192 Show path. Leave empty to try Cleft's default folders."
+      "description": "Choose the exact folder shown in Cleft Settings → Local Sync → Show path. Leave empty to try Cleft's default folders."
     },
     {
       "name": "startShortcut",

@@ -2,8 +2,8 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "wikihow",
   "title": "WikiHow",
-  "description": "Find wikiHow articles and read search excerpts in Raycast using your Brave Search API key",
-  "icon": "extension-icon.png",
+  "description": "Search wikiHow how-to guides, keep your recently viewed articles, and open a random article.",
+  "icon": "icon.png",
   "author": "itsdanielsultan",
   "license": "MIT",
   "categories": [
@@ -35,6 +35,13 @@
           "required": false
         }
       ]
+    },
+    {
+      "name": "random-article",
+      "title": "Random Article",
+      "subtitle": "wikiHow",
+      "description": "Open a random wikiHow article in your browser.",
+      "mode": "no-view"
     }
   ],
   "preferences": [

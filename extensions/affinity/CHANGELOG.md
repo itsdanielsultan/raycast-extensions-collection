@@ -1,6 +1,6 @@
-# Changelog
+# Affinity Changelog
 
-## Initial Version - 2026-10-10
+## [Initial Version] - {PR_MERGE_DATE}
 
-- Add read-only inspection of open Affinity documents and their layer inventories through the local MCP server.
-- Add explicit setup errors, refresh actions, and copy actions.
+- **Search Affinity Files**: Find Affinity Designer, Photo and Publisher files on your Mac and open, preview or reveal them.
+- **Inspect Documents**: Search open documents and inspect size, DPI, page count, selection, and layer names without changing them.

@@ -1,12 +1,8 @@
-# Changelog
-
-## [Feature Update] - {PR_MERGE_DATE}
-
-- Real submission status: Turned in, Missing, Done late and Graded (with your grade), or class turn-in counts in teacher mode.
-- Coursework is grouped by Overdue / Today / Tomorrow / This Week / Later with relative due dates.
-- New Classroom Due Soon menu bar command showing missing work and what's due this week.
+# Google Classroom Changelog
 
 ## [Initial Version] - {PR_MERGE_DATE}
 
-- Search courses and browse assignments using documented read-only APIs.
-- View due dates, open course pages, and copy links.
+- **Search Courses**: Find courses and browse their assignments
+- **Browse Assignments**: See what's overdue, due today and due this week across your courses, with turned-in, missing and graded status.
+- **Connect Google Classroom**: Sign in and verify access to your courses
+- **Classroom Due Soon**: Show missing work and assignments due this week in the menu bar.

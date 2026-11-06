@@ -1,9 +1,7 @@
-# Changelog
+# Downie Changelog
 
-## [Feature Update] - {PR_MERGE_DATE}
+## [Initial Version] - {PR_MERGE_DATE}
 
-- New Download Current Browser Tab command that sends the page in your frontmost browser (Safari, Chrome, Arc, Brave, Edge, Dia, Vivaldi, Orion) to Downie, optionally as audio or MP4.
-
-## Initial Version - {PR_MERGE_DATE}
-
-- Add supported local app workflows for macOS.
+- **Download Current Browser Tab**: Send the page open in your frontmost browser to Downie, optionally as audio or MP4.
+- **Download Links**: Send one or more URLs to Downie with per-download options.
+- **Download Clipboard Links**: Review clipboard URLs and choose download options in Downie.

@@ -3,7 +3,7 @@
   "name": "caps-lock",
   "title": "Caps Lock",
   "description": "Toggle Caps Lock even when your Caps Lock key is remapped to Hyper, Escape, Control, or another key.",
-  "icon": "extension-icon.png",
+  "icon": "icon.png",
   "author": "itsdanielsultan",
   "platforms": [
     "macOS"

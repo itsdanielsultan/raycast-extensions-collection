@@ -10,8 +10,9 @@
     "Design Tools"
   ],
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
     "@raycast/api": "^2.7.3",
-    "@modelcontextprotocol/sdk": "^1.32.1"
+    "@raycast/utils": "^2.3.3"
   },
   "devDependencies": {
     "@raycast/eslint-config": "^2.1.1",
@@ -19,8 +20,8 @@
     "@types/react": "19.0.10",
     "eslint": "^9.39.4",
     "prettier": "^3.8.1",
-    "typescript": "^5.9.3",
-    "tsx": "^4.20.6"
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
   },
   "scripts": {
     "build": "ray build -e dist",
@@ -31,9 +32,16 @@
     "test": "tsx --test tests/*.test.ts"
   },
   "name": "affinity",
-  "title": "Affinity Document Inspector",
-  "description": "Inspect open Affinity documents and layers through Affinity\u2019s local MCP server.",
+  "title": "Affinity",
+  "description": "Find your Affinity files and inspect open documents and layers through Affinity’s local MCP server.",
   "commands": [
+    {
+      "name": "search-files",
+      "title": "Search Affinity Files",
+      "subtitle": "Affinity",
+      "description": "Find Affinity Designer, Photo and Publisher files on your Mac and open, preview or reveal them.",
+      "mode": "view"
+    },
     {
       "name": "inspect-documents",
       "title": "Inspect Documents",

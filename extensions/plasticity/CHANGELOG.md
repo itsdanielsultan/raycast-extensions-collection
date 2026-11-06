@@ -1,6 +1,6 @@
-# Changelog
+# Plasticity Changelog
 
-## Initial Version - 2026-10-10
+## [Initial Version] - {PR_MERGE_DATE}
 
-- Add read-only object inventory through Plasticity’s official Blender bridge protocol.
-- Add all and visible object scopes, geometry counts, copy actions, and explicit bridge setup errors.
+- **Search Plasticity Files**: Find .plasticity models on your Mac and open, preview or reveal them.
+- **Inspect Model Objects**: Search model objects and copy a model inventory, including geometry counts, through the local Blender bridge.

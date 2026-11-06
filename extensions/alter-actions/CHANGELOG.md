@@ -1,9 +1,5 @@
-# Changelog
+# Alter Actions Changelog
 
-## Initial Version - 2026-10-10
+## [Initial Version] - {PR_MERGE_DATE}
 
-- Save and manage Alter action callbacks locally.
-- Preview selection, clipboard, custom text, or no input before opening an action in Alter.
-- Validate callback schemes, bounded input, and local saved data.
-
-Unpublished development version; live verification remains incomplete. See VERIFICATION.md.
+- **Run Alter Action**: Choose a saved Alter callback, prepare input, and review it before opening the action in Alter.

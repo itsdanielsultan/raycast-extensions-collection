@@ -1,13 +1,10 @@
 # Cleft Notes Changelog
 
-## [Feature Update] - {PR_MERGE_DATE}
+## [Initial Version] - {PR_MERGE_DATE}
 
-- Preview pane with the note summary and a snippet of where your search matched.
-- Notes grouped by Today / Yesterday / This Week / This Month / Older.
-- Paste Summary action.
-
-## Initial Version
-
-- Search synced Cleft summaries and transcripts with tag filtering.
-- Preview and copy text and open exported Markdown or optional audio.
-- Start, stop, and continue native Cleft voice capture through Apple Shortcuts.
+- **Search Notes**: Search titles, tags, summaries, and transcripts in Cleft Local Sync files.
+- **Read Latest Transcript**: Read and copy the transcript from your most recently created synced Cleft note.
+- **Start Voice Note**: Run Cleft's native Start Recording action through Apple Shortcuts.
+- **Stop and Save Recording**: Run Cleft's native Stop Recording action through Apple Shortcuts.
+- **Continue Last Note**: Run Cleft's native Continue Last Note action through Apple Shortcuts.
+- **Configure Cleft Integration**: Install native capture shortcuts and configure the Local Sync folder.

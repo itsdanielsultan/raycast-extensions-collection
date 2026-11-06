@@ -3,7 +3,7 @@
   "name": "classroom",
   "title": "Google Classroom",
   "description": "See what's due, what's missing and what's graded across your Google Classroom courses.",
-  "icon": "extension-icon.png",
+  "icon": "icon.png",
   "author": "itsdanielsultan",
   "license": "MIT",
   "categories": [

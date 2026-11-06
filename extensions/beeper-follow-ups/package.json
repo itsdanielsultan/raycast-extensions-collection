@@ -3,7 +3,7 @@
   "name": "beeper-follow-ups",
   "title": "Beeper Follow-Ups",
   "description": "Review direct conversations whose latest visible message came from someone else and prepare a draft in Beeper.",
-  "icon": "extension-icon.png",
+  "icon": "icon.png",
   "author": "itsdanielsultan",
   "license": "MIT",
   "platforms": [

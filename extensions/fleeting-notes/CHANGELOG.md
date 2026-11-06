@@ -1,13 +1,8 @@
-# Changelog
+# Fleeting Notes Changelog
 
-## [Feature Update] - {PR_MERGE_DATE}
+## [Initial Version] - {PR_MERGE_DATE}
 
-- Add to Scratchpad — append a line straight from the Raycast search bar.
-- Append Selected Text to Scratchpad — capture a selection from any app.
-- Live word and character count.
-
-## Initial Development Build — 2026-10-10
-
-- Instantly editable scratchpad with immediate atomic local saving and reopen/resume.
-- Clipboard actions, reviewed fresh-pad creation, and recovery through a previous-pad swap.
-- Optional menu-bar shortcut, disabled by default.
+- **Open Scratchpad**: Type freely in a local scratchpad, close it, and resume the same note later.
+- **Scratchpad Menu Bar**: Keep a menu-bar shortcut to open or copy your scratchpad.
+- **Add to Scratchpad**: Append a line to your scratchpad straight from the Raycast search bar.
+- **Append Selected Text to Scratchpad**: Append the text selected in the frontmost app to your scratchpad.

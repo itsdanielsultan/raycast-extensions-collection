@@ -1,12 +1,11 @@
-# Changelog
+# Brain.fm Changelog
 
-## [Feature Update] - {PR_MERGE_DATE}
+## [Initial Version] - {PR_MERGE_DATE}
 
-- New Brain.fm Menu Bar command with the current track, timer and play/pause/skip controls.
-- Added Brave, Microsoft Edge and Vivaldi as supported browsers.
-
-## Initial Version
-
-- Add Brain.fm-specific play, pause, toggle, next, previous, and current-session commands.
-- Read browser media-session status while preserving Brain.fm's own hardware media-key handlers.
-- Verify playback state and track changes before reporting successful controls.
+- **Now Playing**: Read the current Brain.fm track, playback state, timer, and media-session information.
+- **Play**: Resume your current Brain.fm session without toggling an already-playing session.
+- **Pause**: Pause your current Brain.fm session without toggling an already-paused session.
+- **Play/Pause**: Toggle playback in your Brain.fm player tab.
+- **Skip Track**: Use Brain.fm's Skip track control and verify the track changed.
+- **Previous Track**: Use Brain.fm's Previous track control and verify the track changed.
+- **Brain.fm Menu Bar**: See the current Brain.fm track and timer in the menu bar and control playback.

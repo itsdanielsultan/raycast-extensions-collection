@@ -1,11 +1,6 @@
-# Changelog
-
-## [Feature Update] - {PR_MERGE_DATE}
-
-- Works without an API key: searches open on wikiHow.com, and a key unlocks in-Raycast previews.
-- Recently Viewed articles appear when the search bar is empty.
-- Copy any article as a Markdown link.
+# WikiHow Changelog
 
 ## [Initial Version] - {PR_MERGE_DATE}
 
-- Add wikiHow article search through the Brave Web Search API with readable excerpt previews and explicit article actions.
+- **Search Articles**: Search wikiHow articles, preview indexed excerpts, and open the full article
+- **Random Article**: Open a random wikiHow article in your browser.

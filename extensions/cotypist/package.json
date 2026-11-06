@@ -3,7 +3,7 @@
   "name": "cotypist",
   "title": "Cotypist",
   "description": "Read and control Cotypist default completions through its native Accessibility controls",
-  "icon": "extension-icon.png",
+  "icon": "icon.png",
   "author": "itsdanielsultan",
   "license": "MIT",
   "categories": [
