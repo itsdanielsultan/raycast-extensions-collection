@@ -6,7 +6,7 @@ A collection of 19 [Raycast](https://raycast.com) extensions for macOS, built ar
 | --- | --- | --- |
 | [Affinity Document Inspector](extensions/affinity) | Inspect open Affinity documents and layers through Affinity’s local MCP server. | 1 |
 | [Alter Actions](extensions/alter-actions) | Run your saved Alter actions with selected text, clipboard text, or a custom prompt after reviewing the input. | 1 |
-| [Beeper Follow-Ups](extensions/beeper-follow-ups) | Review direct conversations whose latest visible message came from someone else and prepare a draft in Beeper. | 2 |
+| [Beeper Follow-Ups](extensions/beeper-follow-ups) | Review direct conversations whose latest visible message came from someone else and prepare a draft in Beeper. On the store as part of the [Beeper Desktop](https://github.com/raycast/extensions/pull/33218) extension. | 2 |
 | [Brain.fm](extensions/brain-fm) | Control the Brain.fm web player and see the current track, timer, and browser media session. | 7 |
 | [Caps Lock](extensions/caps-lock) | Toggle Caps Lock even when your Caps Lock key is remapped to Hyper, Escape, Control, or another key. | 4 |
 | [Google Classroom](extensions/classroom) | See what's due, what's missing and what's graded across your Google Classroom courses. | 4 |
@@ -20,7 +20,7 @@ A collection of 19 [Raycast](https://raycast.com) extensions for macOS, built ar
 | [Microsoft Word](extensions/microsoft-word) | Inspect the active Word document, copy text, control Track Changes, and create a document from text. | 4 |
 | [Plasticity Model Inspector](extensions/plasticity) | Search the open Plasticity model and inspect objects through its official Blender bridge. | 1 |
 | [Roku Remote](extensions/roku-remote) | Fast, keyboard-driven control for Roku TVs and players over your local network — now playing, app launching, search, routines and a menu bar. | 18 |
-| [Spokenly Word Replacements](extensions/spokenly-word-replacements) | Search, add, remove, and back up Spokenly word replacements through its official CLI | 2 |
+| [Spokenly Word Replacements](extensions/spokenly-word-replacements) | Search, add, remove, and back up Spokenly word replacements through its official CLI. On the store as part of the [Spokenly](https://github.com/raycast/extensions/pull/33219) extension. | 2 |
 | [Sunflower](extensions/sunflower) | Control Sunflower's disk analysis views, rescan the current disk, and navigate a completed scan from Raycast | 3 |
 | [WikiHow](extensions/wikihow) | Find wikiHow articles and read search excerpts in Raycast using your Brave Search API key | 1 |
 
