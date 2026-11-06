@@ -10,6 +10,8 @@ import {
   showToast,
   Toast,
 } from "@raycast/api";
+import { showFailureToast } from "@raycast/utils";
+import { openCommand } from "./lib/launch";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { getDashboard, restorePrevious } from "./lib/automation";
 import type { DeviceStatus } from "./lib/automation";
@@ -21,7 +23,8 @@ import type { RokuDevice } from "./lib/types";
 import { ConnectionHelp } from "./components/ConnectionHelp";
 import { RoutineRunner } from "./components/routineRunner";
 
-export default function TVDashboard() {
+/** `navigationTitle` is only passed when pushed; as a command root, Raycast shows the command title. */
+export default function TVDashboard({ navigationTitle }: { navigationTitle?: string } = {}) {
   const [statuses, setStatuses] = useState<DeviceStatus[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string>();
@@ -57,11 +60,7 @@ export default function TVDashboard() {
       await selectDevice(device.id);
       await launchCommand({ name: command, type: LaunchType.UserInitiated });
     } catch (cause) {
-      await showToast({
-        style: Toast.Style.Failure,
-        title: "Couldn't open TV controls",
-        message: describeRokuError(cause),
-      });
+      await showFailureToast(describeRokuError(cause), { title: "Couldn't open TV controls" });
     }
   }
 
@@ -100,7 +99,7 @@ export default function TVDashboard() {
     <List
       isLoading={isLoading}
       isShowingDetail
-      navigationTitle="Roku TV Dashboard"
+      navigationTitle={navigationTitle}
       searchBarPlaceholder="Search saved TVs…"
     >
       <List.EmptyView
@@ -110,11 +109,7 @@ export default function TVDashboard() {
         actions={
           <ActionPanel>
             {refreshAction}
-            <Action
-              title="Manage TVs"
-              icon={Icon.Gear}
-              onAction={() => launchCommand({ name: "manage-devices", type: LaunchType.UserInitiated })}
-            />
+            <Action title="Manage TVs" icon={Icon.Gear} onAction={() => openCommand("manage-devices")} />
           </ActionPanel>
         }
       />
@@ -147,18 +142,18 @@ export default function TVDashboard() {
             <List.Item
               key={device.id}
               title={device.name}
-              subtitle={status.activeApp?.name}
+              // The detail pane hides accessories, so reachability is in the subtitle and icon tint.
+              subtitle={[
+                status.reachable ? status.activeApp?.name || "Reachable" : "Unreachable",
+                restricted ? "Limited control" : undefined,
+              ]
+                .filter(Boolean)
+                .join(" · ")}
               keywords={[device.host, device.model ?? ""]}
-              icon={Icon.Desktop}
-              accessories={[
-                {
-                  tag: {
-                    value: status.reachable ? "Reachable" : "Unreachable",
-                    color: status.reachable ? Color.Green : Color.SecondaryText,
-                  },
-                },
-                ...(restricted ? [{ tag: { value: "Limited control", color: Color.Orange } }] : []),
-              ]}
+              icon={{
+                source: Icon.Desktop,
+                tintColor: !status.reachable ? Color.SecondaryText : restricted ? Color.Orange : Color.Green,
+              }}
               detail={
                 <List.Item.Detail
                   markdown={
@@ -218,11 +213,7 @@ export default function TVDashboard() {
                           message: device.name,
                         });
                       } catch (cause) {
-                        await showToast({
-                          style: Toast.Style.Failure,
-                          title: "Couldn't select TV",
-                          message: describeRokuError(cause),
-                        });
+                        await showFailureToast(describeRokuError(cause), { title: "Couldn't select TV" });
                       }
                     }}
                   />
@@ -270,11 +261,7 @@ function DeviceRoutines({ device }: { device: RokuDevice }) {
         description={error ?? "Create a routine in Roku Routines and choose this TV."}
         actions={
           <ActionPanel>
-            <Action
-              title="Open Roku Routines"
-              icon={Icon.Plus}
-              onAction={() => launchCommand({ name: "roku-routines", type: LaunchType.UserInitiated })}
-            />
+            <Action title="Open Roku Routines" icon={Icon.Plus} onAction={() => openCommand("roku-routines")} />
           </ActionPanel>
         }
       />

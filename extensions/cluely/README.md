@@ -38,4 +38,3 @@ npm run dev
 ```
 
 Source references: [official CLI README](https://github.com/cluely/cluely-cli), [list response and filters](https://github.com/cluely/cluely-cli/blob/main/cmd/sessions_list.go), [detail response](https://github.com/cluely/cluely-cli/blob/main/cmd/sessions_get.go), [official dashboard origin](https://github.com/cluely/cluely-cli/blob/main/internal/config/config.go).
-

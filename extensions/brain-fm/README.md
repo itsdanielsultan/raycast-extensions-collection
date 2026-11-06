@@ -37,17 +37,6 @@ This is an unofficial UI integration. Brain.fm's player must be signed in, have 
 
 Track controls may report that verification is unavailable when Brain.fm selects a different variant with the same visible title. Verification stays pinned to the original browser and player tab; closing that tab cannot make another tab count as a successful result.
 
-## Development
-
-```sh
-npm install
-npm test
-npm run typecheck
-npm run lint
-npm run build
-npm run dev
-```
-
 ## Sources
 
 - [Brain.fm web player](https://my.brain.fm/)
@@ -59,3 +48,14 @@ npm run dev
 - [Existing Spotify Player control flow](https://github.com/raycast/extensions/blob/main/extensions/spotify-player/src/togglePlayPause.ts), inspected for command semantics and verification expectations.
 
 The icon is Brain.fm's official web app icon, obtained from its public web app manifest. Code is MIT licensed. Brain.fm is a trademark of its owner; this extension is not affiliated with Brain.fm.
+
+## Development
+
+```sh
+npm install
+npm test
+npm run typecheck
+npm run lint
+npm run build
+npm run dev
+```

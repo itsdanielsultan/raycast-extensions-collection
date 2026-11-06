@@ -36,4 +36,3 @@ npm run dev
 ```
 
 The included Swift source can be compiled independently with Apple's Swift compiler. Do not run native control tests against personal documents; use disposable text and restore the original completion setting afterwards.
-

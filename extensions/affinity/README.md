@@ -22,6 +22,14 @@ Layer lists include the document’s spread and group nodes. To keep large files
 
 Affinity’s scripting SDK is in beta.
 
+## Sources
+
+- [Affinity’s official automation announcement](https://www.affinity.studio/blog/affinity-automation-scripting-claude)
+- [Affinity connector setup](https://www.affinity.studio/help/ai-connector-setup/)
+- [Affinity JavaScript SDK](https://sdk.affinity.studio/33000/)
+- [Canva’s Affinity connector tool listing](https://claude.com/marketplace/connectors/affinity-106b90)
+- [Raycast extension development](https://developers.raycast.com/basics/getting-started)
+
 ## Development
 
 ```sh
@@ -32,11 +40,3 @@ npm run lint
 npm run build
 npm run dev
 ```
-
-## Sources
-
-- [Affinity’s official automation announcement](https://www.affinity.studio/blog/affinity-automation-scripting-claude)
-- [Affinity connector setup](https://www.affinity.studio/help/ai-connector-setup/)
-- [Affinity JavaScript SDK](https://sdk.affinity.studio/33000/)
-- [Canva’s Affinity connector tool listing](https://claude.com/marketplace/connectors/affinity-106b90)
-- [Raycast extension development](https://developers.raycast.com/basics/getting-started)

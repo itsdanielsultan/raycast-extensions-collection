@@ -42,7 +42,7 @@ Your Mac and Roku must be on the same reachable local network. If discovery retu
 | Go to Roku Home                 | Open the default TV's Home screen                                                              |
 | Power on Roku / Power off Roku  | Explicit power commands; waking can also use saved network hardware addresses                  |
 
-Assign Raycast hotkeys or aliases to the quick commands in Raycast Settings → Extensions. Inside the remote, search for a control and press Return. Command-R refreshes TV information or scans for devices in Manage Roku TVs.
+Assign Raycast hotkeys or aliases to the quick commands in Raycast Settings → Extensions. Inside the remote, move between controls with the arrow keys and press Return, or use the listed remote keys. Typing in the search bar sends keys to the TV rather than filtering controls. Command-R refreshes TV information or scans for devices in Manage Roku TVs.
 
 Text entry depends on the active Roku app accepting keyboard input. Sending text does not erase existing text or submit the field. Find My Remote appears only when the Roku advertises support. Streaming-player volume and TV power depend on the device's reported HDMI-CEC capabilities.
 
@@ -114,24 +114,6 @@ Raycast currently lists AI Extensions as a paid Pro feature; any subscription or
 
 The free **Roku Instructions** command processes text on your Mac. Using the optional AI tools passes your request and tool results—including serial-derived TV identifiers, TV names, current activity, routines, and alias settings—through Raycast's configured AI experience. Its privacy and permission settings apply; do not treat that flow as the local parser's privacy boundary.
 
-## Install from source
-
-Requires macOS, Raycast, and Node.js 22.22.2 or later.
-
-```sh
-npm ci
-npm run dev
-```
-
-Run those commands in this project folder. Raycast's development command builds and registers the local extension. Once installed, keep the project folder if you want to make further changes.
-
-```sh
-npm test
-npm run typecheck
-npm run lint
-npm run build
-```
-
 ## How it works
 
 The controller uses Roku's [External Control Protocol](https://developer.roku.com/dev/docs/external-control-api). Discovery sends SSDP `M-SEARCH` packets for `roku:ecp` on each IPv4 network interface. It validates responder addresses, then verifies device information over HTTP port 8060. The remote sends `POST /keypress/<key>`, text uses literal key events, and apps/inputs use `POST /launch/<id>`. It reads device, installed-app and active-app queries for status.
@@ -153,3 +135,21 @@ The implementation is independently written and does not copy Roam's code.
 Private listening, voice-remote audio, and pairing a physical Roku remote are not implemented. An accepted keypress is a Roku acknowledgement, not proof of its physical effect.
 
 Raycast's [developer setup documentation](https://developers.raycast.com/basics/getting-started) covers the local extension workflow.
+
+## Install from source
+
+Requires macOS, Raycast, and Node.js 22.22.2 or later.
+
+```sh
+npm ci
+npm run dev
+```
+
+Run those commands in this project folder. Raycast's development command builds and registers the local extension. Once installed, keep the project folder if you want to make further changes.
+
+```sh
+npm test
+npm run typecheck
+npm run lint
+npm run build
+```
