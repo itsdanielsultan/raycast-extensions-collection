@@ -1,31 +1,18 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const native = vi.hoisted(() => ({ run: vi.fn() }));
-vi.mock("@raycast/api", () => ({
-  environment: { assetsPath: "/fixture/assets", supportPath: "/fixture/support" },
-}));
-vi.mock("node:util", () => ({ promisify: () => native.run }));
-vi.mock("node:fs/promises", () => ({
-  access: vi.fn().mockResolvedValue(undefined),
-  readFile: vi.fn().mockResolvedValue("fixture native source"),
-  chmod: vi.fn(),
-  mkdir: vi.fn(),
-  rename: vi.fn(),
-  rm: vi.fn(),
-}));
+vi.mock("../src/native", () => ({ runControl: native.run }));
 
-const enabledStatus = {
-  stdout: JSON.stringify({
-    ok: true,
-    defaultEnabled: true,
-    originalDefaultEnabled: true,
-    changed: false,
-    version: "2026.5",
-    method: "native-accessibility",
-    disableConfirmationHandled: false,
-    warnings: [],
-  }),
-};
+const enabledStatus = JSON.stringify({
+  ok: true,
+  defaultEnabled: true,
+  originalDefaultEnabled: true,
+  changed: false,
+  version: "2026.5",
+  method: "native-accessibility",
+  disableConfirmationHandled: false,
+  warnings: [],
+});
 
 beforeEach(() => {
   vi.resetModules();
@@ -53,12 +40,11 @@ describe("packaged control request concurrency", () => {
   it("does not merge two mutation requests", async () => {
     native.run.mockResolvedValue(enabledStatus);
     const { control } = await import("../src/lib/control");
-    await Promise.all([
-      control("enable-default"),
-      control("enable-default"),
-    ]);
+    await Promise.all([control("enable-default"), control("enable-default")]);
     expect(native.run).toHaveBeenCalledTimes(2);
-    expect(native.run.mock.calls.every((call) => call[1][0] === "enable-default")).toBe(true);
+    expect(
+      native.run.mock.calls.every((call) => call[0] === "enable-default"),
+    ).toBe(true);
   });
 
   it("clears a rejected status read so a later retry can run", async () => {

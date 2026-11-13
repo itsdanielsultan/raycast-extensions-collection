@@ -104,7 +104,8 @@
           "label": "Show the track name while playing",
           "description": "Display the current track next to the icon while Brain.fm is playing."
         }
-      ]
+      ],
+      "subtitle": "Brain.fm"
     }
   ],
   "dependencies": {

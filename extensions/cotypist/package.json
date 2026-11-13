@@ -17,25 +17,29 @@
       "name": "status",
       "title": "Completion Status",
       "description": "Read the native default completion setting and available model status",
-      "mode": "view"
+      "mode": "view",
+      "subtitle": "Cotypist"
     },
     {
       "name": "enable-default",
       "title": "Enable Default Completions",
       "description": "Enable completions by default with native state verification",
-      "mode": "no-view"
+      "mode": "no-view",
+      "subtitle": "Cotypist"
     },
     {
       "name": "disable-default",
       "title": "Disable Default Completions",
       "description": "Disable completions by default; individually enabled apps retain their overrides",
-      "mode": "no-view"
+      "mode": "no-view",
+      "subtitle": "Cotypist"
     },
     {
       "name": "toggle-default",
       "title": "Toggle Default Completions",
       "description": "Toggle the native default completion setting with state verification",
-      "mode": "no-view"
+      "mode": "no-view",
+      "subtitle": "Cotypist"
     }
   ],
   "preferences": [],

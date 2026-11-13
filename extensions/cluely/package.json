@@ -18,13 +18,15 @@
       "name": "meetings",
       "title": "Browse Meetings",
       "description": "Filter and search loaded Cluely sessions, then preview and copy their notes",
-      "mode": "view"
+      "mode": "view",
+      "subtitle": "Cluely"
     },
     {
       "name": "connection",
       "title": "Check Cluely Connection",
       "description": "Verify the official Cluely CLI installation and account sign-in",
-      "mode": "view"
+      "mode": "view",
+      "subtitle": "Cluely"
     }
   ],
   "preferences": [

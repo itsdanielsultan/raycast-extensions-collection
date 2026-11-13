@@ -10,15 +10,15 @@ try {
     {
       name: "locator",
       sources: [
-        "assets/control-locator.swift",
+        "swift/cotypist-control/Sources/ControlLocator.swift",
         "tests/native-locator-tests.swift",
       ],
     },
     {
       name: "snapshot",
       sources: [
-        "assets/control-locator.swift",
-        "assets/snapshot-policy.swift",
+        "swift/cotypist-control/Sources/ControlLocator.swift",
+        "swift/cotypist-control/Sources/SnapshotPolicy.swift",
         "tests/native-snapshot-tests.swift",
       ],
     },
