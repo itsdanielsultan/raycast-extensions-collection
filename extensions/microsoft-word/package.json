@@ -38,6 +38,7 @@
     {
       "name": "recent-documents",
       "title": "Recent Word Documents",
+      "subtitle": "Microsoft Word",
       "description": "Search Word documents you've used in the last 90 days and open, preview or reveal them.",
       "mode": "view"
     },

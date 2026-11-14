@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "wikihow",
-  "title": "WikiHow",
+  "title": "wikiHow",
   "description": "Search wikiHow how-to guides, keep your recently viewed articles, and open a random article.",
   "icon": "icon.png",
   "author": "itsdanielsultan",

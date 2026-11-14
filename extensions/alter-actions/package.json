@@ -18,7 +18,8 @@
       "name": "run-action",
       "title": "Run Alter Action",
       "description": "Choose a saved Alter callback, prepare input, and review it before opening the action in Alter.",
-      "mode": "view"
+      "mode": "view",
+      "subtitle": "Alter"
     }
   ],
   "dependencies": {
