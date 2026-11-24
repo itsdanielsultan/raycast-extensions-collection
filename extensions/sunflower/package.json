@@ -24,13 +24,15 @@
       "name": "show-largest-files",
       "title": "Show Largest Files",
       "description": "Show Sunflower's Largest view for the folder currently selected in its disk scan",
-      "mode": "no-view"
+      "mode": "no-view",
+      "subtitle": "Sunflower"
     },
     {
       "name": "rescan-disk",
       "title": "Rescan Disk",
       "description": "Request a new scan of the disk currently selected in Sunflower",
-      "mode": "no-view"
+      "mode": "no-view",
+      "subtitle": "Sunflower"
     }
   ],
   "dependencies": {
